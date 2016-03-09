@@ -1,0 +1,655 @@
+@charset "utf-8";
+
+/* HTML CSS RESET FILE CALLED IN HERE */
+/*@import url("html-css-reset.css");*/
+
+/*******************************************************************************************************
+MOBILE PHONE LAYOUT:
+0PX TO 480PX
+********************************************************************************************************/
+.clear_float{
+	clear: both;
+	line-height: 0;
+	font-size: 0;
+	}
+	
+.strong{
+	font-weight: 600;
+	}
+	
+html{
+	overflow-y: scroll;
+	}
+
+body{
+	background-color: #FFF;
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.3em;
+	word-spacing: 0.1em;
+	}
+
+h1, h2, h3, h4, h5, h6{
+	color: #5B5B5C;
+	font-family: 'Forum', cursive;
+	}
+
+h1{
+	font-size: 160%;	
+	}
+
+h2{
+	font-size: 140%;	
+	}
+
+h3{
+	font-size: 120%;	
+	}
+
+h4{
+	font-size: 100%;	
+	}
+
+h5{
+	font-size: 90%;	
+	}
+
+h6{
+	font-size: 80%;	
+	}
+
+/* use *img width:100% to speak specifically to IE7 and lower*/
+*img{
+	width: 100%;
+	}	
+/*********************MOBILE HEADER START*************************/
+
+/*#B0CE36 green, #FDC011 yellow, #F36D21 orange, #ED1D24 red, #E8128E magenta, #6352A3 purple */
+.green{ 
+	color: #B0CE36;
+	}
+	
+.yellow{ 
+	color: #FDC011;
+	}
+		
+.orange{ 
+	color: #F36D21;
+	}
+		
+.red{ 
+	color: #ED1D24;
+	}
+	
+.magenta{ 
+	color: #E8128E;
+	}
+	
+.purple{ 
+	color: #6352A3;
+	}
+	
+.dgray{ 
+	color: #5B5B5C; /*#5B5B5C dark grey*/
+	}
+
+.large{
+	font-size: 2.19em;
+	}	
+			
+#mobile_header{
+	width: 100%;
+	height: auto;
+	background: #D6D0CF; /*#D6D0CF light grey*/
+	background-image: url(../images/pr-bg-splat2.png);
+	background-repeat: no-repeat;
+	}
+
+  #mobile_header h1{
+	  float: left;
+	  width: 39%;
+	  padding: 12% 5% 3% 6%;
+	  font-size: 2em;
+	  line-height: 0.8em;
+	  text-shadow: -0.05em 0.05em 0.1em #000;
+	  text-align: left;
+	  color: #FFF;
+	  }
+	
+  #mobile_header figure{ /*hamburger*/
+	  float: right;
+	  width: 49%;
+	  height: auto;
+	  margin: 13.5% 0 2% 0;
+	  }  
+	  						  
+	  #mobile_header figure img{
+		  max-width: 100%;
+		  margin: 0 0 0 40%;
+		  }		  	  
+/********************MOBILE HEADER END*********************/
+
+
+/*********************MOBILE NAV START*********************/
+a.mobile_nav:link, a.mobile_nav:visited, a.mobile_nav:active{  
+	color: #D6D0CF; /*#D6D0CF light grey*/
+	text-decoration: none;
+	text-align: center;
+	font-weight: 400;
+	}
+
+/* playing with unique id to give different hovers for each*/
+#home_hover:hover{
+	background: #B0CE36; /*#B0CE36 green, #FDC011 yellow, #F36D21 orange, #ED1D24 red, #E8128E magenta, #6352A3 purple */
+	color: #efefef; /*#5B5B5C dark grey*/      
+	}
+	
+#library_hover:hover{
+	background: #FDC011; 
+	color: #efefef;     
+	}
+	
+#gallery_hover:hover{
+	background: #F36D21; 
+	color: #efefef;     
+	}
+
+#blog_hover:hover{
+	background: #ED1D24; 
+	color: #efefef;     
+	}	
+
+#about_hover:hover{
+	background: #E8128E; 
+	color: #efefef;      
+	}
+
+#contact_hover:hover{
+	background: #6352A3; 
+	color: #efefef;    
+	}
+	
+#mobile_nav{ /*nav that is hidden*/
+	display: none;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	background: #5B5B5C; /*#5B5B5C dark grey*/
+	}
+	
+	#mobile_nav ul{
+		margin: 0 auto;
+		}
+		
+		#mobile_nav ul li{
+			float: left;
+			width: 32.56%;
+			margin: 0;
+			border: #efefef 0.1em solid;
+			}
+			
+			#mobile_nav ul li a{
+				display: block;
+				padding: 15% 0;
+				}				  		
+/***************************MOBILE NAV END******************************/
+
+
+/***********************NON_MOBILE_HEADER START*************************/
+#non_mobile_header{
+	display: none;
+	}
+/***********************NON_MOBILE_HEADER END***************************/
+
+
+/***********************NON_MOBILE_NAV START****************************/
+#non_mobile_nav{
+	display: none;
+	}
+/***********************NON_MOBILE_NAV END******************************/
+
+
+/**********************MOBILE SECTION START ****************************/
+section{
+	width: 100%;
+	}
+	
+	section h1{
+		width: 85%;
+		margin: 0 5% -7% 0;
+		padding: 3% 0 5% 10%;
+		color: #D6D0CF; /*#D6D0CF light grey*/
+		text-align: right;
+		font-size: 2.1em;
+		line-height: 1.2em;
+		}
+		
+	section figure{
+		width: 95.8333%;
+		margin: 0 auto;
+		}
+		
+		section figure img{
+			max-width: 100%;
+			}
+			
+	section article{
+		width: 95.8333%;
+		margin: 0 auto;
+		color: #5B5B5C; /*#5B5B5C dark grey*/
+		}
+		
+		section article h2{
+			margin: 2% auto 1% auto;
+			font-size: 1.8em;
+			text-align: center;
+			}
+			
+			section article p{
+				margin: 0 auto;
+				padding: 5%;
+				}
+
+				a:link, a:visited, a:active{  
+					color: #00AEEF; /*#00AEEF light blue*/
+					}
+	
+	#wrapper{
+		margin: 0 auto;
+		padding: 3% 0;
+		background: #D6D0CF; /*#D6D0CF light grey*/
+		}
+	
+	#wrapper figure {
+		position: relative;
+		width: 90%;
+		margin: 2% auto;
+		text-align: center;
+		}
+		
+		#wrapper figure img{
+			max-width: 100%;
+			}
+		
+		#wrapper figure figcaption{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 90%;
+			padding: 5%;
+			}
+			
+			#wrapper figure figcaption h3{ 
+				width: 90%;
+				margin: 1% 5%;
+				font-size: 1.9em;
+				color: #5B5B5C; /*#5B5B5C dark grey*/
+				text-align: right;
+				}
+				
+			#wrapper figure figcaption p{ 
+				width: 90%;				
+				margin: 0 5%;
+				color: #5B5B5C; /*#5B5B5C dark grey*/
+				text-align: right;
+				}
+
+				#wrapper figure a:link, a:visited, a:active{
+					text-decoration: none;
+					}
+					
+					#wrapper figure a:hover img{						
+						opacity: 0.5;
+						}
+
+/**********************MOBILE SECTION END*******************************/
+
+
+/**********************MOBILE FOOTER START******************************/
+footer{
+	width: 96%;
+	padding: 2%;
+	background: #D6D0CF; /*#D6D0CF light grey*/
+	}
+
+	footer figure{
+		margin: 2% auto;
+		text-align: center;
+		}
+
+	footer figure a img{
+		opacity: 0.5;
+		margin: 0 2.5%;
+		}
+
+	footer figure a:hover img{
+		opacity: 1;
+		}
+
+	footer address{
+		margin: 1% auto;
+		padding: 0;
+		font-style: normal;
+		color: #5B5B5C; /*#5B5B5C dark grey*/
+		text-align: center;		
+		}
+
+	footer p{
+		margin: 1% auto;
+		color: #5B5B5C; /*#5B5B5C dark grey*/
+		font-size: 0.9em;
+		text-align: center;
+		}
+
+
+/***********************MOBILE FOOTER END*******************************/
+
+/***********************************************************************************************************
+TABLET PHONE LAYOUT:
+481PX TO 800PX. INHERITS STYLES FROM : MOBILE LAYOUT
+************************************************************************************************************/
+@media only screen and (min-width: 481px) {
+	
+.clear_float_tablet{
+	clear: both;
+	line-height: 0;
+	font-size: 0;
+}
+/********************TABLET NON_MOBILE_HEADER AND NON_MOBILE_NAV START*********************/
+#mobile_header, #mobile_nav{
+	display: none;
+	}
+
+#non_mobile_header, #non_mobile_nav{
+	display: block;
+	}
+
+#non_mobile_header {	
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 0 10% 0;
+	background: #fff;
+	background-image: url(../images/pr-bg-header1.png);
+	background-repeat: no-repeat;
+	text-align: center;
+	}
+
+	#non_mobile_header h1{
+		width: 22%;
+		margin: 0;
+		padding: 6% 10% 2% 4%;
+		background-image: url(../images/pr-bg-splat2.png);
+		background-repeat: no-repeat;
+		font-size: 2em;
+		line-height: 0.8em;
+		text-shadow: -0.05em 0.05em 0.1em #000;
+		text-align: left;
+		color: #FFF;
+		}
+
+a.non_mobile_nav:link, a.non_mobile_nav:visited, a.non_mobile_nav:active{
+	padding: 8% 0;
+	color: #D6D0CF; /*#D6D0CF light grey*/
+	text-align: center;
+	font-weight: 500;
+	}	
+	
+#non_mobile_nav{	
+	width: 100%;	
+	height: auto;
+	margin: 0 auto;
+	padding: 0;
+	}
+	
+	#non_mobile_nav ul{
+		display: flex;	
+		background: #5B5B5C; /*#5B5B5C dark grey*/ 
+		}
+		
+		#non_mobile_nav ul li{
+			flex: 1;
+			}
+
+			#non_mobile_nav ul li a{
+				display: block;
+				}			  	
+/********************TABLET NON_MOBILE_HEADER AND NON_MOBILE_NAV END*********************/
+
+/*************************TABLET SECTION START**************************/
+section{
+	margin: 0 auto;
+	padding: 1% 0;
+	}
+	
+	section h1{
+		width: 53%;		
+		margin: 0 0 0 38%;
+		padding: 2% 9% 5% 0;
+		text-align: right;
+		font-size: 2.5em;
+		}
+
+	section figure{
+		width: 80%;
+		margin: -10% 0 0 0;
+		}
+	
+	section article{
+		float: left;
+		width: 58%;
+		}
+	
+	#wrapper{
+		float: right;
+		width: 40%;
+		margin: 9% 2% 0 0;
+		padding: 0;
+		background: #fff;
+		}
+	
+		#wrapper figure{
+			width: 100%;
+			margin: 4% 0;
+			}		
+			
+			#wrapper figure figcaption{
+				width: 97%;
+				padding: 5% 3% 5% 0;
+				} /*2, 1*/
+				
+				#wrapper figure figcaption h3{ 
+					margin: 1% 0 1% 4.5%;
+					font-size: 1.4em;
+					}
+					
+				#wrapper figure figcaption p{ 
+						margin: 0 0 0 4.5%;
+						}
+/*************************TABLET SECTION END****************************/
+
+
+/*************************TABLET FOOTER START***************************/
+footer figure{
+		float: right;
+		width: 50%;
+		margin: 0;
+		padding: 2% 0 2% 20%;
+		}
+
+	footer address{
+		float: left;
+		width: 25%;
+		margin-left: 3%;
+		text-align: left;
+		line-height: 1.3em; 	
+		}
+
+	footer p{
+		margin: 0 auto;
+		}
+
+/**************************TABLET FOOTER END****************************/
+}
+/*************************************************************************************************************
+DESKTOP LAYOUT:
+801PX TO 1300PX. INHERITS STYLES FROM : MOBILE LAYOUT AND TABLET LAYOUT
+*************************************************************************************************************/
+
+@media only screen and (min-width: 801px) {
+
+.clear_float_ws{
+	clear: both;
+	line-height: 0;
+	font-size: 0;
+}
+/*********************DESKTOP NON_MOBILE_HEADER AND NON_MOBILE NAV START********************/
+#non_mobile_header{
+	width: 85%;
+	padding: 0 0 6% 0; 
+	}
+
+#non_mobile_header h1{
+	  width: 15%;
+	  padding: 5% 10% 2% 3%;
+	  }
+		
+	  a.non_mobile_nav:link, a.non_mobile_nav:visited, a.non_mobile_nav:active{
+		  padding: 6% 0;
+		  }
+/**********************DESKTOP NON_MOBILE_HEADER AND NON_MOBILE_NAV END*********************/
+
+/**************************DESKTOP SECTION START*************************/
+section{
+	width: 85%;
+	padding: 0;
+	}
+
+	
+	section h1{
+		width: 40%;
+		margin-left: 40%;
+		padding: 1% 20% 5% 0;
+		}
+
+	section figure{
+		width: 85%;
+		
+		}
+	
+	section article{
+		float: none;
+		width: 81%;
+		}
+
+		section article h2{
+			margin: 1% auto;
+			}
+			
+			section article p{
+				padding: 2%;
+				}
+	
+	#wrapper{
+		float: none;
+		width: 100%;
+		margin: 0 auto;
+		}
+	
+		#wrapper figure{
+			float: left;
+			width: 30%;
+			margin: 4% 1.65%;
+			}		
+			
+			#wrapper figure figcaption{
+				
+				}
+				
+				#wrapper figure figcaption h3{ 
+					
+					}
+					
+				#wrapper figure figcaption p{ 
+						
+						}
+/***************************DESKTOP SECTION END**************************/
+
+
+/**********************DESKTOP FOOTER START*******************************/
+footer{
+	width: 90%;
+	margin: 0 auto;
+	}
+
+footer figure{
+		float: right;
+		width: 30%;
+		margin: 0;
+		padding: 2% 0 2% 51.5%;
+		}
+
+	footer address{
+		float: left;
+		width: 16%;
+		margin-left: 2.5%;
+		text-align: left;
+		line-height: 1.3em; 	
+		}
+/***********************DESKTOP FOOTER END*******************************/
+}
+/**************************************************************************************************************
+WIDE SCREEN TV LAYOUT:
+1300PX AND WIDER. INHERITS STYLES FROM : MOBILE LAYOUT AND TABLET LAYOUT AND DESKTOP WIDE SCREEN MONITOR LAYOUT
+**************************************************************************************************************/
+
+@media only screen and (min-width: 1300px) {
+/********************WIDESCREEN NON_MOBILE_HEADER AND NON_MOBILE_NAV START*******************/
+#non_mobile_header{
+	width: 68%;
+	padding: 0 0 3% 0;
+	}
+
+	#non_mobile_header h1{
+		width: 10%;
+		padding: 4% 10% 1% 2%;
+		}
+/**********************WIDESCREEN NON_MOBILE_NAV AND NON_MOBILE_NAV END**********************/
+
+
+/************************WIDESCREEN SECTION START*************************/
+section{
+	width: 68%;
+	}
+
+	section h1{
+		width: 30%;
+		margin-left: 35%;
+		padding: 1% 45% 5% 0;
+		}
+
+		section article h2{
+			margin: 0 auto 1% auto;
+			}
+
+			#wrapper figure{
+			margin: 1.5% 1.65%;
+			}
+
+/*************************WIDESCREEN SECTION END**************************/
+
+/***********************WIDESCREEN FOOTER START*******************************/
+footer{
+	width: 66%;
+	padding: 1%;
+	}
+
+footer figure{
+		width: 25%;
+		padding: 2% 0 2% 60%;
+		}
+
+	footer address{
+		width: 13%;
+		margin-left: 2%;
+		}
+/*************************WIDESCREEN FOOTER END*******************************/
+}

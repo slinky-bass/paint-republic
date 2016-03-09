@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- TELLS THE BROWSER THAT THE PAGE IS ENABLED FOR VARIOUS VIEWPORTS AND STOPS THE BROWSER FROM ZOOMING OUT TO THE DEFAULT DESKTOP SCREEN WIDTH-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Danielle Eriksen | PHP and Web Developer | Respo0nsive Webtemplate - Paint Republic ">
+<title>Danielle Eriksen | Responsive webtemplate - Paint Republic</title>
+
+<!--#################### TEACHES OLDER BROWSERS HTML5 ######################## -->
+<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--#################### IE BUG FIX ######################## -->
+<!--[if lt IE 9]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+<![endif]-->
+
+<!-- 
+The following script allows all browsers to support media queries in CSS.
+-->
+
+<!--[if lt IE 9]>
+<script src="http://css3-mediaqueriesjs.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<link rel="stylesheet" type="text/css" href="stylesheets/html-css-reset.css">
+<link href="stylesheets/public.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Forum' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<!-- $ indicates working with Jquery-->
+<script>
+
+$(document).ready(function(){<!-- checks to make sure the HTML is fully interpreted before calling the jquery function-->
+	
+	$("#hamburger").click(function() {<!-- on click of #hamburger call the toggle function on #mobile_nav-->
+		$("#mobile_nav").toggle();
+	});
+
+});	
+</script>
+	
+</head>
+
+<body id="home"> 
+	    
+<!-- MOBILE HEADER -->
+    <header id="mobile_header">
+        
+        <a href="index.html" title="Paint Republic home page." rel="nofollow"><h1>Paint Republic</h1></a>
+        
+        <figure>  
+    
+    		<a id="hamburger" href="javascript:void();" title="Mobile navigation menue."><img src="images/hamburger.png" alt="Hamburger icon with blue paint and brush handle"></a>
+                             
+    	</figure>
+    
+        <div class="clear_float"></div>
+        
+    </header>  
+                         
+<!-- MOBILE NAV -->          
+    <nav id="mobile_nav">   
+    
+        <ul>
+                     
+            <li><a class="mobile_nav" id="home_hover" href="index.html" title="Paint Republic home page.">Home</a></li>
+            
+            <li><a class="mobile_nav" id="library_hover" href="javascript:void();" title="Library of colour schemes">Library</a></li> 
+                     
+            <li><a class="mobile_nav" id="gallery_hover" href="javascript:void();" title="Gallery of inspirational interiors">Gallery</a></li>
+            
+            <li><a class="mobile_nav" id="blog_hover" href="javascript:void();" title="Paint Republic Blog.">Blog</a></li>
+            
+            <li><a class="mobile_nav" id="about_hover" href="javascript:void();" title="More about Paint Republic.">About</a></li>
+            
+            <li><a class="mobile_nav" id="contact_hover" href="javascript:void();" title="Get in touch with us.">Contact</a></li> 
+            
+            <!--<div class="clear_float_tablet"></div> try with flex first, might not need two navs-->
+            <div class="clear_float"></div>
+              
+        </ul>
+                                                              
+    </nav>  
+        
+    <!-- NON_MOBILE_HEADER INCLUDES MOBILE LANDSCAPE, TABLET PORTRAIT & WIDESCREEN, DESKTOP WIDESCREEN, HD PORTRAIT & WIDESCREEN -->
+    <header id="non_mobile_header">
+    
+    	<a href="index.html" title="Paint Republic home page." rel="nofollow"><h1>Paint Republic</h1></a>
+
+        <nav id="non_mobile_nav">
+    
+	        <ul>
+	                     
+	            <li><a class="non_mobile_nav" id="home_hover" href="javascript:void();" title="Paint Republic home page.">Home</a></li>
+	            
+	            <li><a class="non_mobile_nav" id="library_hover" href="javascript:void();"  title="Library of colour schemes">Library</a></li>  
+
+	            <li><a class="non_mobile_nav" id="gallery_hover" href="javascript:void();"  title="Gallery of inspirational interiors">Gallery</a></li>
+	            
+	            <li><a class="non_mobile_nav" id="blog_hover" href="javascript:void();" title="Paint Republic Blog.">Blog</a></li>
+	            
+	            <li><a class="non_mobile_nav" id="about_hover" href="javascript:void();" title="More about Paint Republic.">About</a></li>
+	            
+	            <li><a class="non_mobile_nav" id="contact_hover" href="javascript:void();" title="Get in touch with us.">Contact</a></li> 
+	              
+	        </ul>
+        
+    	</nav>
+
+    <!--<div class="clear_float_tablet"></div>-->
+    
+    </header>  
+    
+    <!-- SECTION STARTS HERE -->
+    <section>
+    
+     <!-- NATURAL HEADING FOR SECTION -->
+    <h1>Your p<span class="orange">a</span>rtner in <span class="green large">c</span><span class="yellow large">o</span><span class="orange large">l</span><span class="red large">o</span><span class="magenta large">u</span><span class="purple large">r</span></h1> 
+    
+        <figure><img src="images/pr-bg-couple.png" alt="Happy young couple looking at colour swatches"></figure>
+        
+        <!-- ARTICLE STARTS HERE -->
+        <article>
+
+        	<h2 class="magenta">Bring colours to life</h2>
+       
+            <p>This website template has been desinged by <a href="http://www.webtemplates.com" target="_blank" title="Find free downloadable web templates here.">Free Website Templates</a> for you, for free. You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template, then don't hesitate to ask for help on the <a href="http://www.webtemplates.com/forums" target="_blank" title="">forums</a>.</p>
+            
+            <!-- REL NOFOLLOW SET FOR THESE LINKS AS THEY ARE DUPLICATES-->
+            <p>This website template has been desinged by <a href="http://www.webtemplates.com" target="_blank" title="" rel="nofollow">Free Website Templates</a> for you, for free. You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template, then don't hesitate to ask for help on the <a href="http://www.webtemplates.com/forums" target="_blank" title="Find free downloadable web templates here." rel="nofollow">forums</a>.</P>
+        
+        </article>
+    
+    	 <!-- WRAPPER DIV FOR FIGURES -->
+        <div id="wrapper">
+        
+            <!-- SEPARATE FIGURES FOR EACH IMAGE AS FIGURE CAN ONLY CONTAIN ONE FIGCAPTION -->
+            <figure>
+            
+            	<a href="javascript:void();" title="Choose the latest colour schemes from our colour library.">
+            
+                <img src="images/pr-latest-colors.png" alt="Large gold check symbol">
+                
+                <figcaption>
+                
+                	<h3>Get the latest <span class="green">c</span><span class="yellow">o</span><span class="orange">l</span><span class="red">o</span><span class="magenta">u</span><span class="purple">r</span><span class="green">s</span></h3>
+           
+                	<p>from our</p>
+                	<p><span class="magenta strong">COLOUR LIBRARY</span></p>
+                
+                </figcaption>
+            
+            	</a>
+            
+            </figure>
+            
+            <figure>
+            
+                <a href="javascript:void();" title="Check out our gallery for inspiration.">
+                
+                <img src="images/pr-inspiration.png" alt="Lounge with coffee table and sofas">
+                
+                <figcaption>
+                
+                    <h3>Need <span class="green">i</span><span class="yellow">n</span><span class="orange">s</span><span class="red">p</span><span class="magenta">i</span><span class="purple">r</span><span class="green">a</span><span class="yellow">t</span><span class="orange">i</span><span class="red">o</span><span class="magenta">n</span><span class="purple">?</span></h3>
+                    
+                    <p>check out our</p>
+                    <p><span class="magenta strong">GALLERY</span></p>
+                
+                </figcaption>
+            	
+              	</a> 
+                 
+            </figure>
+            
+            <figure>
+            
+                <a href="javascript:void();" target="_blank" title="Get in touch with our experts here."><img src="images/pr-color-expert.png" alt="Young woman on the phone">
+                
+                <figcaption>
+                
+                	<h3><span class="green">C</span><span class="yellow">o</span><span class="orange">l</span><span class="red">o</span><span class="magenta">u</span><span class="purple">r</span> <span class="green">e</span><span class="yellow">x</span><span class="orange">p</span><span class="red">e</span><span class="magenta">r</span><span class="purple">t</span><span class="green">s</span></h3>
+                
+                	<p><span class="magenta strong">CONTACT US</span></p>
+                	<p>for advice</p>
+                
+                </figcaption>
+            
+            	</a>
+            
+            </figure>
+        
+            <div class="clear_float_ws"></div>
+
+        </div> 
+    	
+        <div class="clear_float_tablet"></div>
+        
+    </section>    
+    
+    <!-- FOOTER STARTS HERE -->
+    <footer>
+
+		 <!--CHOSE FIGURE TO CONTAIN SOCIAL MEDIA ICONS RATHER THAN NAV AS I FELT IT WAS NOT A MAJOR BLOCK OF NAVIGATIONAL LINKS-->
+	    <figure>
+
+	    	<!-- ORDER OF ICONS CHANGED FROM ORIGINAL TO RELFECT IMPORTANCE, PLACED MAIL ICON AT THE END OF THE LIST-->
+	    	<a href="javascript:void();" title="Check out our tweets here."><img src="images/icon-twitter.png" alt="twitter social media site icon"></a>
+
+			<a href="javascript:void();" title="Connect with us on Facebook."><img src="images/icon-facebook.png" alt="facebook social media site icon"></a>
+
+			<a href="javascript:void();" title="Join us on Google Plus."><img src="images/icon-g.png" alt="google plus social media site icon"></a>
+
+			<a href="javascript:void();" title="Email us here."><img src="images/icon-mail.png" alt="email icon"></a>
+
+	    </figure>
+ 		
+ 		<!-- CONTACT DETAILS RELEVANT TO THE FICTIOUS OWNERS OF THE PAGE (I.E. PAINT REPUBLIC) ENCLOSED IN ADDRESS TAGS-->
+ 		<address>Paint Republic, 256 RGB St, Svga City</address>
+
+ 		<div class="clear_float_tablet"></div>
+
+	    <p>copyright &#169; 2015 | all rights reserved.</p>
+    
+    </footer> 
+        
+</body>
+
+</html>
